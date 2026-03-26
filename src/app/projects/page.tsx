@@ -70,7 +70,7 @@ export default function ProjectsPage() {
           <Link
             key={project.slug}
             href={`/projects/${project.slug}`}
-            className="block rounded-lg p-6 transition-colors"
+            className="block rounded-lg p-6 transition-all card-gold-hover"
             style={{
               backgroundColor: "var(--surface)",
               border: "1px solid var(--border)",

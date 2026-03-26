@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { getAllPosts } from "@/lib/posts";
 
 const focusAreas = [
@@ -43,6 +44,19 @@ export default async function HomePage() {
     <div className="max-w-5xl mx-auto px-4 py-16">
       {/* Hero */}
       <section className="mb-20">
+        {/* Logo mark visual anchor */}
+        <div className="mb-6">
+          <Image
+            src="/logo-mark.png"
+            alt="Morain or Shine"
+            width={72}
+            height={72}
+            className="hero-mark-glow"
+            style={{ height: "72px", width: "auto" }}
+            priority
+          />
+        </div>
+
         <p className="text-sm font-medium mb-3" style={{ color: "var(--accent)" }}>
           Zac Morain
         </p>
@@ -50,7 +64,7 @@ export default async function HomePage() {
           className="text-4xl md:text-5xl font-bold mb-5 leading-tight"
           style={{ color: "#ffffff" }}
         >
-          Morain or Shine.
+          Morain <span className="or-gold">or</span> Shine.
         </h1>
         <p
           className="text-lg max-w-2xl leading-relaxed mb-3"
@@ -59,8 +73,7 @@ export default async function HomePage() {
           Former pitching coach. Now building AI tools, analytics systems, and an absurdist sports media operation. Never the best at one thing. Obsessively good at a lot of things through sheer grind.
         </p>
         <p
-          className="text-sm max-w-2xl"
-          style={{ color: "var(--muted)" }}
+          className="text-sm max-w-2xl tagline-gold font-medium"
         >
           So what, next pitch.
         </p>
@@ -98,7 +111,7 @@ export default async function HomePage() {
             <Link
               key={area.slug}
               href={area.href}
-              className="block rounded-lg p-5 transition-colors group"
+              className="block rounded-lg p-5 transition-all group card-gold-hover"
               style={{
                 backgroundColor: "var(--surface)",
                 border: "1px solid var(--border)",
@@ -153,7 +166,7 @@ export default async function HomePage() {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="block py-4 group"
+                className="block py-4 pl-3 group card-accent-left transition-all"
                 style={{
                   borderBottom: "1px solid var(--border)",
                   textDecoration: "none",

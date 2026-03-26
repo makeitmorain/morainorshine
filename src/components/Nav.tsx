@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -27,10 +28,22 @@ export default function Nav() {
       <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
         <Link
           href="/"
-          className="text-white font-bold text-lg tracking-tight hover:no-underline"
+          className="flex items-center gap-2.5 hover:no-underline"
           style={{ textDecoration: "none" }}
         >
-          Morain or Shine
+          <Image
+            src="/logo-mark.png"
+            alt="MoS"
+            width={36}
+            height={36}
+            className="shrink-0"
+            style={{ height: "36px", width: "auto" }}
+            priority
+          />
+          {/* Full name on desktop, hidden on mobile */}
+          <span className="hidden sm:inline text-white font-bold text-lg tracking-tight">
+            Morain <span className="or-gold">or</span> Shine
+          </span>
         </Link>
 
         {/* Desktop nav */}

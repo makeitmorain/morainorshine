@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0d0d0d;
+  --background: #0a0a0a;
   --surface: #1a1a1a;
   --surface-raised: #242424;
   --border: #2e2e2e;
@@ -9,6 +9,8 @@
   --muted: #888888;
   --accent: #00bcd4;
   --accent-hover: #00acc1;
+  --accent-gold: #c5a055;
+  --accent-gold-hover: #d4b06a;
   --rlm-navy: #1a2744;
   --rlm-gold: #c9a84c;
 }
@@ -126,4 +128,66 @@ a:hover {
 .prose img {
   max-width: 100%;
   border-radius: 6px;
+}
+
+/* Brand: "or" gold treatment */
+.or-gold {
+  color: var(--accent-gold);
+}
+
+/* Brand: subtle dot-grid texture overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Ensure content sits above texture */
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Brand: gold tagline */
+.tagline-gold {
+  color: var(--accent-gold);
+  font-style: italic;
+}
+
+/* Brand: social link gold hover (CSS-only, no JS needed) */
+.social-link {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+.social-link:hover {
+  color: var(--accent-gold);
+  text-decoration: none;
+}
+
+/* Brand: card with teal left-border accent */
+.card-accent-left {
+  border-left: 2px solid var(--accent) !important;
+}
+
+/* Brand: card gold hover */
+.card-gold-hover:hover {
+  border-color: var(--accent-gold) !important;
+}
+
+/* Brand: section divider with gold tint */
+.divider-gold {
+  height: 1px;
+  background: linear-gradient(to right, var(--accent-gold), transparent);
+  opacity: 0.35;
+  margin: 2.5rem 0;
+}
+
+/* Brand: hero glow anchor */
+.hero-mark-glow {
+  filter: drop-shadow(0 0 24px rgba(0, 188, 212, 0.25)) drop-shadow(0 0 48px rgba(197, 160, 85, 0.12));
 }

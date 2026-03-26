@@ -48,7 +48,7 @@ export default async function BlogPage() {
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className="block py-5"
+              className="block py-5 pl-3 card-accent-left transition-all"
               style={{
                 borderBottom: "1px solid var(--border)",
                 textDecoration: "none",
