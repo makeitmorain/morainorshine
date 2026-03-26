@@ -95,7 +95,7 @@ export default async function BlogPostPage({ params }: Props) {
           </p>
         )}
         <div
-          className="flex items-center gap-3 text-sm"
+          className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"
           style={{ color: "var(--muted)" }}
         >
           <span>
