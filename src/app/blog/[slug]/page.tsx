@@ -4,6 +4,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import { getAllPosts, getPostBySlug } from "@/lib/posts";
 import Link from "next/link";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -142,9 +143,14 @@ export default async function BlogPostPage({ params }: Props) {
         />
       </article>
 
+      {/* Newsletter signup */}
+      <div className="mt-16">
+        <NewsletterSignup />
+      </div>
+
       {/* Footer nav */}
       <div
-        className="mt-16 pt-8"
+        className="mt-8 pt-8"
         style={{ borderTop: "1px solid var(--border)" }}
       >
         <Link

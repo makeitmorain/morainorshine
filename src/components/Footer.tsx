@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 export default function Footer() {
   return (
@@ -9,7 +10,12 @@ export default function Footer() {
         borderTop: "1px solid var(--border)",
       }}
     >
-      <div className="max-w-5xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div className="max-w-5xl mx-auto px-4 pt-10 pb-4">
+        <div className="mb-8 max-w-md">
+          <NewsletterSignup variant="inline" />
+        </div>
+      </div>
+      <div className="max-w-5xl mx-auto px-4 pb-8 flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-sm" style={{ color: "var(--muted)" }}>
           Zac Morain. Baseball analytics, AI, and software.
         </p>
