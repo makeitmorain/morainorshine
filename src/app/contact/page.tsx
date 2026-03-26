@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
+import ContactForm from "./ContactForm";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with Zac Morain.",
+  description: "Get in touch with Zac Morain. Questions, collaborations, or just want to talk baseball.",
+  openGraph: {
+    title: "Contact -- Morain or Shine",
+    description: "Questions, collaborations, or just want to talk baseball.",
+    type: "website",
+  },
 };
 
 export default function ContactPage() {
@@ -15,6 +22,7 @@ export default function ContactPage() {
         Questions, collaborations, or just want to talk baseball.
       </p>
 
+      {/* Social links */}
       <div className="flex flex-col gap-4 mb-12">
         <a
           href="https://x.com/makeitmorain"
@@ -61,19 +69,13 @@ export default function ContactPage() {
         </a>
       </div>
 
-      <div
-        className="rounded-lg p-6"
-        style={{
-          backgroundColor: "var(--surface)",
-          border: "1px solid var(--border)",
-        }}
-      >
-        <h2 className="font-semibold text-base mb-3" style={{ color: "#ffffff" }}>
-          Contact form
-        </h2>
-        <p className="text-sm mb-4" style={{ color: "var(--muted)" }}>
-          Contact form coming soon. For now, reach out on X or GitHub.
-        </p>
+      {/* Contact form (client component) */}
+      <ContactForm />
+
+      <div className="mt-8">
+        <Link href="/" className="text-sm" style={{ color: "var(--muted)", textDecoration: "none" }}>
+          Back to home
+        </Link>
       </div>
     </div>
   );

@@ -4,8 +4,46 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Fantasy Baseball",
   description:
-    "Fantasy baseball analysis and draft strategy. Content lives on Medium and X.",
+    "Fantasy baseball analysis and draft strategy by Zac Morain. Content at xFantasy Performance Lab on Medium (@xFPLab) and on X (@makeitmorain).",
+  openGraph: {
+    title: "Fantasy Baseball -- xFPLab",
+    description:
+      "Advanced fantasy baseball analysis. Draft journals, trade analysis, in-season strategy. Content lives on Medium (@xFPLab) due to MLB employment.",
+    type: "website",
+  },
 };
+
+const contentHighlights = [
+  {
+    title: "The Three-Peat Quest",
+    type: "Draft Journal Series",
+    description:
+      "A season-long draft journal tracking the attempt to win a third consecutive fantasy championship. Real draft decisions, real in-season logic, real outcomes -- with the analytical framework spelled out.",
+  },
+  {
+    title: "The Nolan Jones Trade Analysis",
+    type: "Trade Analysis",
+    description:
+      "A deep dive into the value proposition on a high-ceiling, injury-prone outfielder. The kind of analysis that either looks brilliant or like the most expensive learning experience in your league.",
+  },
+];
+
+const platforms = [
+  {
+    name: "Medium: @xFPLab",
+    handle: "xFantasy Performance Lab",
+    url: "https://medium.com/@xFPLab",
+    description:
+      "The main content hub. Draft journals, player analysis, in-season roster strategy, and methodology breakdowns. Updated during the season.",
+  },
+  {
+    name: "X: @makeitmorain",
+    handle: "@makeitmorain",
+    url: "https://x.com/makeitmorain",
+    description:
+      "Real-time takes, roster moves, trade opinions, and whatever is happening in baseball right now.",
+  },
+];
 
 export default function FantasyBaseballPage() {
   return (
@@ -13,7 +51,7 @@ export default function FantasyBaseballPage() {
       <Link
         href="/projects"
         className="text-sm mb-8 inline-block"
-        style={{ color: "var(--muted)" }}
+        style={{ color: "var(--muted)", textDecoration: "none" }}
       >
         Back to Projects
       </Link>
@@ -33,70 +71,94 @@ export default function FantasyBaseballPage() {
         Fantasy Baseball
       </h1>
 
-      <p className="text-lg mb-10 leading-relaxed" style={{ color: "#a1a1aa" }}>
-        Fantasy baseball analysis and draft strategy. Draft journals, player
-        breakdowns, and in-season roster decisions.
+      <p className="text-lg mb-6 leading-relaxed" style={{ color: "#a1a1aa" }}>
+        Advanced matchup analysis, draft strategy, and in-season roster decisions. Data-driven, not vibes-based.
       </p>
 
+      {/* Why external */}
       <div
-        className="rounded-lg p-6 mb-6"
+        className="rounded px-4 py-3 mb-10 text-sm"
         style={{
           backgroundColor: "var(--surface)",
           border: "1px solid var(--border)",
+          color: "#a1a1aa",
         }}
       >
-        <h2 className="font-semibold text-base mb-4" style={{ color: "#ffffff" }}>
-          Where the content lives
-        </h2>
-        <p className="text-sm mb-5" style={{ color: "#a1a1aa" }}>
-          Fantasy baseball content stays on Medium and X due to my part-time
-          role at MLB. It does not live on this site.
-        </p>
-        <div className="flex flex-col gap-3">
-          <a
-            href="https://medium.com/@xFPLab"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-3 p-3 rounded"
-            style={{
-              backgroundColor: "var(--surface-raised)",
-              border: "1px solid var(--border)",
-              textDecoration: "none",
-            }}
-          >
-            <div>
-              <p className="text-sm font-medium" style={{ color: "#ffffff" }}>
-                Medium: @xFPLab
-              </p>
-              <p className="text-xs" style={{ color: "var(--muted)" }}>
-                xFantasy Performance Lab. Draft journals, player analysis,
-                in-season strategy.
-              </p>
-            </div>
-          </a>
-          <a
-            href="https://x.com/makeitmorain"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-3 p-3 rounded"
-            style={{
-              backgroundColor: "var(--surface-raised)",
-              border: "1px solid var(--border)",
-              textDecoration: "none",
-            }}
-          >
-            <div>
-              <p className="text-sm font-medium" style={{ color: "#ffffff" }}>
-                X: @makeitmorain
-              </p>
-              <p className="text-xs" style={{ color: "var(--muted)" }}>
-                Daily takes, roster moves, and real-time fantasy baseball
-                content.
-              </p>
-            </div>
-          </a>
-        </div>
+        Fantasy baseball content stays on Medium and X. It does not live on this site due to a part-time role at MLB. The xFPLab brand keeps that content separate and distinct from the projects hosted here.
       </div>
+
+      {/* Where to find it */}
+      <section className="mb-10">
+        <h2
+          className="text-xs font-semibold uppercase tracking-widest mb-5"
+          style={{ color: "var(--muted)" }}
+        >
+          Where to find it
+        </h2>
+        <div className="flex flex-col gap-3">
+          {platforms.map((p) => (
+            <a
+              key={p.name}
+              href={p.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start justify-between p-4 rounded-lg"
+              style={{
+                backgroundColor: "var(--surface)",
+                border: "1px solid var(--border)",
+                textDecoration: "none",
+              }}
+            >
+              <div className="flex-1 min-w-0">
+                <p className="text-sm font-semibold mb-0.5" style={{ color: "#ffffff" }}>
+                  {p.name}
+                </p>
+                <p className="text-xs mb-2" style={{ color: "#6366f1" }}>
+                  {p.handle}
+                </p>
+                <p className="text-xs leading-relaxed" style={{ color: "var(--muted)" }}>
+                  {p.description}
+                </p>
+              </div>
+              <span className="ml-4 shrink-0 mt-1" style={{ color: "var(--muted)" }}>
+                -&gt;
+              </span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      {/* Notable content */}
+      <section>
+        <h2
+          className="text-xs font-semibold uppercase tracking-widest mb-5"
+          style={{ color: "var(--muted)" }}
+        >
+          Notable content
+        </h2>
+        <div className="flex flex-col gap-4">
+          {contentHighlights.map((item) => (
+            <div
+              key={item.title}
+              className="rounded-lg p-4"
+              style={{
+                backgroundColor: "var(--surface)",
+                border: "1px solid var(--border)",
+              }}
+            >
+              <p className="text-xs font-medium mb-1" style={{ color: "#6366f1" }}>
+                {item.type}
+              </p>
+              <p className="text-sm font-semibold mb-1.5" style={{ color: "#ffffff" }}>
+                {item.title}
+              </p>
+              <p className="text-sm leading-relaxed" style={{ color: "#a1a1aa" }}>
+                {item.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
