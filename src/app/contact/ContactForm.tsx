@@ -143,7 +143,7 @@ export default function ContactForm() {
             className="px-4 py-2 rounded text-sm font-medium"
             style={{
               backgroundColor: "var(--accent)",
-              color: "#ffffff",
+              color: "#0a0a0a",
               border: "none",
               cursor: status === "sending" ? "not-allowed" : "pointer",
               opacity: status === "sending" ? 0.7 : 1,

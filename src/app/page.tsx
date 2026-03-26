@@ -80,8 +80,8 @@ export default async function HomePage() {
         <div className="flex gap-4 mt-8">
           <Link
             href="/projects"
-            className="px-5 py-2.5 rounded text-sm font-medium text-white transition-colors"
-            style={{ backgroundColor: "var(--accent)" }}
+            className="px-5 py-2.5 rounded text-sm font-medium transition-colors"
+            style={{ backgroundColor: "var(--accent)", color: "#0a0a0a" }}
           >
             See projects
           </Link>
