@@ -69,7 +69,7 @@ export default function FlMensLeaguePage() {
       </h1>
 
       <p className="text-lg mb-10 leading-relaxed" style={{ color: "#a1a1aa" }}>
-        A full analytics and scouting system built from four seasons of recreational men's league baseball data. Custom metrics, automated pipelines, leaderboards, spray charts, and player analysis -- all powered by GameChanger data and Python.
+        A real analytics pipeline for a recreational league. wRC+, WAR, and a custom chaos metric for a group of guys who work day jobs and play on Sundays. The absurdity is the point. The analytics are legit.
       </p>
 
       {/* What it is */}
@@ -84,10 +84,10 @@ export default function FlMensLeaguePage() {
           What it is
         </h2>
         <p className="text-sm leading-relaxed mb-3" style={{ color: "#a1a1aa" }}>
-          Scout Analytics is the data infrastructure layer that powers Replacement Level Media. Every stat that shows up in a Max article, every number Bill cites in Power Rankings, every xCHAOS leaderboard that Teddy gets wrong -- it all comes from this pipeline.
+          Scout Analytics is the data layer underneath Replacement Level Media. Every stat in a Max article, every number Bill cites in Power Rankings, every xCHAOS leaderboard Teddy inevitably gets wrong -- it all flows from this pipeline.
         </p>
         <p className="text-sm leading-relaxed" style={{ color: "#a1a1aa" }}>
-          The system goes beyond tracking box scores. It applies major league analytical frameworks -- adjusted for a recreational league where the talent range runs from "former D1 player" to "found on Facebook this morning" -- and produces actionable player evaluations.
+          The system applies major league analytical frameworks to a recreational league where the talent range runs from &quot;former D1 player&quot; to &quot;found on Facebook this morning.&quot; That calibration problem is actually interesting. The formulas are adapted -- not copy-pasted from FanGraphs.
         </p>
       </div>
 

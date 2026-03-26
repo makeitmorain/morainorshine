@@ -10,10 +10,13 @@ export default function NotFound() {
         404
       </p>
       <h1 className="text-xl font-semibold mb-3" style={{ color: "#ffffff" }}>
-        Page not found
+        Swing and a miss.
       </h1>
+      <p className="text-sm mb-2" style={{ color: "var(--muted)" }}>
+        That page doesn&apos;t exist. Might&apos;ve been moved, might&apos;ve never been.
+      </p>
       <p className="text-sm mb-8" style={{ color: "var(--muted)" }}>
-        That page does not exist or was moved.
+        So what, next pitch.
       </p>
       <Link
         href="/"

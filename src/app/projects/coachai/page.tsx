@@ -68,7 +68,7 @@ export default function CoachAiPage() {
       </h1>
 
       <p className="text-lg mb-10 leading-relaxed" style={{ color: "#a1a1aa" }}>
-        An AI-powered baseball coaching assistant built on Driveline methodology and 200+ athlete coaching experience. Pitching instruction, biomechanics analysis, and pitch design -- currently operating as a knowledge base and research tool on the path to a full product.
+        I coached 200+ athletes and spent years in biomechanics labs. Now I&apos;m teaching AI everything I know. Pitching instruction, pitch design, and arsenal development -- built on Driveline methodology, not scraped from the internet.
       </p>
 
       {/* Origin */}
@@ -83,10 +83,10 @@ export default function CoachAiPage() {
           Where it comes from
         </h2>
         <p className="text-sm leading-relaxed mb-3" style={{ color: "#a1a1aa" }}>
-          Built by a former professional baseball development coach with hands-on experience at Driveline Academy Flex and 802 Baseball Lab. The coaching frameworks aren't pulled from the internet -- they're documented from real athlete work using Rapsodo, Trackman, Blast Motion sensors, and biomechanics labs.
+          The coaching frameworks inside CoachAI aren&apos;t pulled from the internet. They&apos;re documented from real athlete work -- Rapsodo sessions, Trackman data, Blast Motion sensors, high-speed video, and biomechanics labs. I ran programming at 802 Baseball Lab and worked at Driveline Academy Flex. This is what I actually taught.
         </p>
         <p className="text-sm leading-relaxed" style={{ color: "#a1a1aa" }}>
-          The Statcast integration connects the coaching knowledge base to live MLB data, making it possible to benchmark pitch shapes, compare movement profiles, and research pitch tunneling strategies against the full population of major league pitchers.
+          The Statcast integration connects that coaching knowledge to live MLB data. Benchmark pitch shapes against major league arsenals. Research tunneling strategies. Compare movement profiles across the full population of active pitchers. It&apos;s where domain expertise meets real data.
         </p>
       </div>
 
@@ -133,10 +133,10 @@ export default function CoachAiPage() {
           Status
         </h2>
         <p className="text-sm leading-relaxed mb-3" style={{ color: "#a1a1aa" }}>
-          v1 is an internal research and development tool -- a structured knowledge base for pitching coaching and arsenal design. It's operational and actively used for real coaching decisions and personal pitcher development.
+          v1 is an internal research tool. A structured knowledge base for pitching coaching and arsenal design that I actually use for real decisions. It works. It&apos;s not pretty yet.
         </p>
         <p className="text-sm leading-relaxed" style={{ color: "#a1a1aa" }}>
-          v2 planning is underway. If CoachAI becomes a public product or service, this page becomes the landing page with access options. For now, it's a portfolio project showcasing applied AI development in a domain where the builder has genuine subject matter expertise.
+          v2 is in planning. The goal is a public coaching interface where any pitcher can get Driveline-caliber feedback from a system trained on years of real athlete data. That&apos;s the direction. Just rip it -- ship the v1, iterate toward the product.
         </p>
       </div>
     </div>

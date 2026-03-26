@@ -72,7 +72,7 @@ export default function FantasyBaseballPage() {
       </h1>
 
       <p className="text-lg mb-6 leading-relaxed" style={{ color: "#a1a1aa" }}>
-        Advanced matchup analysis, draft strategy, and in-season roster decisions. Data-driven, not vibes-based.
+        Trying a new hobby. Writing about fantasy baseball. Three-Peat quest is live. The content lives on Medium and X under xFPLab.
       </p>
 
       {/* Why external */}
@@ -84,7 +84,7 @@ export default function FantasyBaseballPage() {
           color: "#a1a1aa",
         }}
       >
-        Fantasy baseball content stays on Medium and X. It does not live on this site due to a part-time role at MLB. The xFPLab brand keeps that content separate and distinct from the projects hosted here.
+        Fantasy content stays off this site. Part-time role at MLB means it needs its own lane. The xFPLab brand handles that -- same analytical approach, separate identity.
       </div>
 
       {/* Where to find it */}

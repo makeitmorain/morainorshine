@@ -114,10 +114,10 @@ export default async function RlmPage() {
           Major League Coverage for Replacement Level Talent.
         </h1>
         <p className="text-base mb-4 leading-relaxed" style={{ color: "#94a3b8" }}>
-          Barstool meets Moneyball. Six AI writer personas covering a Florida men's recreational baseball league like it's the World Series. The analysis is accurate. The packaging is absurd. The bit is always real.
+          Barstool meets Moneyball. Six AI writers covering a Florida Sunday beer league like it&apos;s the World Series. The analysis is accurate. The packaging is completely unhinged. Bill barely holds it together. The bit is always real.
         </p>
         <p className="text-sm" style={{ color: "#6b7fa3" }}>
-          Portfolio project showcasing Python, data science, and full-stack development -- built on GameChanger data, custom analytics (wRC+, WAR, xCHAOS), and a Ghost publishing pipeline.
+          Built on GameChanger data, custom analytics (wRC+, WAR, xCHAOS), and a Ghost publishing pipeline. Club style -- no budget, full ambition.
         </p>
       </div>
 

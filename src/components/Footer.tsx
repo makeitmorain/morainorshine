@@ -17,7 +17,7 @@ export default function Footer() {
       </div>
       <div className="max-w-5xl mx-auto px-4 pb-8 flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-sm" style={{ color: "var(--muted)" }}>
-          Zac Morain. Baseball analytics, AI, and software.
+          Zac Morain. So what, next pitch.
         </p>
         <div className="flex items-center gap-5">
           <a

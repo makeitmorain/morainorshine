@@ -17,8 +17,7 @@ export default async function BlogPage() {
         Blog
       </h1>
       <p className="text-sm mb-10" style={{ color: "var(--muted)" }}>
-        {posts.length} posts. Baseball, analytics, AI, and the process of
-        building.
+        Baseball, analytics, AI, and what it actually looks like to build things. Process included, mess and all.
       </p>
 
       {/* Tags */}

@@ -68,8 +68,7 @@ export default function ToolsPage() {
           Things I&apos;m Building
         </h1>
         <p className="text-base max-w-2xl leading-relaxed" style={{ color: "#a1a1aa" }}>
-          Web tools, dashboards, and interfaces built around baseball analytics and personal
-          productivity. All are works in progress. Check back as they ship.
+          Building things. Some work. Some are still on the drawing board. All of them are headed somewhere. Have trust in the process.
         </p>
       </div>
 

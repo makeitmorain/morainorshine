@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Zac Morain -- baseball pitching coach turned analytics and AI developer.",
+    "Zac Morain -- pitching coach, baseball lab director, CS student, builder. The story behind the site.",
 };
 
 export default function AboutPage() {
@@ -22,41 +22,47 @@ export default function AboutPage() {
 
       <div className="prose">
         <p>
-          I spent years coaching pitchers. Throwing programs, biomechanics,
-          Driveline methodology, high-speed video, TrackMan -- that whole world.
-          I ran programming at 802 Baseball Lab before it closed in early 2024,
-          and I have been a part-time staff member at Driveline Baseball since
-          2024.
+          It started with throwing. I got obsessed with the science of it --
+          arm path, hip-to-shoulder separation, spin rate, pitch tunneling --
+          back when most coaches were still working purely on feel. I went deep
+          on Driveline methodology, high-speed video, Rapsodo, Trackman,
+          biomechanics research. I wanted to understand the thing at a level
+          where I could actually explain it to an athlete and have it change
+          how they threw a baseball.
         </p>
 
         <p>
-          Somewhere along the way I got obsessed with the data side. Statcast,
-          pitch design, expected stats, spin rates -- all of it. The coaching
-          eye and the analytics lens started to merge, and that is mostly what I
-          build now.
+          That obsession turned into a career. I coached 200+ athletes. I
+          built 802 Baseball Lab from scratch and ran player development there
+          until we closed in early 2024. I worked at Driveline Academy Flex.
+          I became an Official Scorer for the Florida Complex League. The
+          coaching eye and the analytical lens started to merge -- and I
+          realized the most interesting work was happening at that intersection.
         </p>
 
         <p>
-          My current projects live at the intersection of baseball and
-          technology: an AI coaching system built on Driveline principles
-          (CoachAI), a fantasy baseball analytics league engine (Scout / FL
-          Men&rsquo;s League), a pitch-vs-lineup grading system (Matchup+), and a
-          rotating-cast AI baseball media outlet (Replacement Level Media). More
-          tools on the way.
+          Then I walked away from coaching. Twice, actually (saving that drama
+          for another time). Not because I failed at it. Because the path
+          wasn't aligned with where I needed to go. The pivot to CS and data
+          analytics wasn't a consolation prize -- it was the logical next move.
+          I wanted to stay connected to baseball from the technology side.
+          Build the tools. Write the systems. Teach the AI everything I learned
+          in the lab.
         </p>
 
         <p>
-          I also write. Mostly about baseball, sometimes about the process of
-          building these things. The older pitching content lives here from the
-          Pitcher Lyfe days. The fantasy baseball analysis lives on Medium under{" "}
-          <a
-            href="https://medium.com/@xFPLab"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            @xFPLab
-          </a>
-          .
+          Now I'm a CS student at CSU Global, building CoachAI, Scout
+          Analytics, Matchup+, and Replacement Level Media -- an absurdist AI
+          sports media operation covering a Sunday men's league like it's the
+          World Series (Bill barely holds it together). I play right-handed in
+          that same league. I'm a dad. I have ADHD. I'm a perpetual student who
+          learns by doing and figures it out as it goes. Can't swim until
+          you're in the water.
+        </p>
+
+        <p>
+          Try hard. Ship things. Move forward. That's the whole operating
+          system.
         </p>
 
         <h2>Connect</h2>
@@ -69,7 +75,8 @@ export default function AboutPage() {
             >
               X / Twitter: @makeitmorain
             </a>{" "}
-            -- daily baseball takes and analytics content
+            -- daily baseball takes, analytics content, and whatever I'm
+            building right now
           </li>
           <li>
             <a
@@ -79,7 +86,7 @@ export default function AboutPage() {
             >
               Medium: @xFPLab
             </a>{" "}
-            -- fantasy baseball analysis (stays on Medium)
+            -- fantasy baseball analysis (lives on Medium, MLB employment reasons)
           </li>
           <li>
             <a
@@ -89,7 +96,7 @@ export default function AboutPage() {
             >
               GitHub: makeitmorain
             </a>{" "}
-            -- open source projects and tools
+            -- the actual code
           </li>
           <li>
             <Link href="/contact">Contact form</Link> -- for everything else
@@ -98,8 +105,9 @@ export default function AboutPage() {
 
         <h2>The name</h2>
         <p>
-          Morain or Shine. Rain or shine. You build regardless. The name works
-          on a few levels and I will let you figure out the rest.
+          Morain or Shine. Rain or shine. You show up regardless. You build
+          regardless. The name works on a few levels and I'll let you figure
+          out the rest.
         </p>
       </div>
     </div>

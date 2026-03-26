@@ -63,7 +63,7 @@ export default function MatchupPlusPage() {
       </h1>
 
       <p className="text-lg mb-10 leading-relaxed" style={{ color: "#a1a1aa" }}>
-        Fantasy baseball analytics platform for weekly lineup decisions. Advanced matchup analysis that quantifies the actual edge -- not platoon splits and park factors, but pitch shape vs. swing shape at the pitch-type level.
+        Fantasy baseball analytics for people who care about process, not just results. Pitch shape meets swing shape. Data-driven, not vibes-based.
       </p>
 
       {/* The core idea */}
@@ -78,13 +78,13 @@ export default function MatchupPlusPage() {
           The problem it solves
         </h2>
         <p className="text-sm leading-relaxed mb-3" style={{ color: "#a1a1aa" }}>
-          Standard fantasy baseball matchup analysis uses park factors, FIP, and platoon splits. Those are useful but blunt. They don't tell you whether a pitcher's specific arsenal is well-suited or poorly-suited against a specific lineup's swing tendencies.
+          Park factors, FIP, and platoon splits are useful. They&apos;re also blunt. They don&apos;t tell you whether this pitcher&apos;s specific arsenal is a good matchup against this specific lineup&apos;s swing tendencies.
         </p>
         <p className="text-sm leading-relaxed mb-3" style={{ color: "#a1a1aa" }}>
-          A sinker-ball pitcher against a dead-pull right-handed lineup plays completely differently than the same pitcher against a lineup full of opposite-field hitters. A nasty sweeper against a pull-heavy left-handed group is a different start than against a lineup full of guys who let it travel.
+          A sinker-ball guy against a dead-pull lineup is a different start than the same pitcher against a group that lets the ball travel. A nasty sweeper against a pull-heavy left-handed lineup is a different start than against guys who cover the outside corner. Same FIP. Completely different outcomes.
         </p>
         <p className="text-sm leading-relaxed" style={{ color: "#a1a1aa" }}>
-          Matchup+ tries to quantify that specific edge or disadvantage using Statcast pitch shape data and swing tendency profiles. The output is a matchup grade -- a single number that captures how a pitcher's arsenal aligns against a lineup's contact profile.
+          Matchup+ scores that specific edge using Statcast pitch shape data and swing tendency profiles. Single matchup grade. Pitch-type level. No vibes required.
         </p>
       </div>
 
@@ -158,7 +158,7 @@ export default function MatchupPlusPage() {
           Status
         </h2>
         <p className="text-sm leading-relaxed mb-4" style={{ color: "#a1a1aa" }}>
-          Core grading system is built and running. Currently working on visualization and a public demo interface. The Statcast data pipeline is live; the scoring model is in active iteration.
+          Core grading system is built and running. The Statcast pipeline is live and the scoring model is in active iteration. Working on a public demo interface -- the kind where you type in a pitcher and a lineup and get a grade back in seconds.
         </p>
         <a
           href="https://github.com/makeitmorain/matchup-plus"

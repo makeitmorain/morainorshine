@@ -19,7 +19,7 @@ export default function ContactPage() {
         Contact
       </h1>
       <p className="text-sm mb-12" style={{ color: "var(--muted)" }}>
-        Questions, collaborations, or just want to talk baseball.
+        Want to talk baseball, analytics, or AI? Working on something and think I can help? Or just want to tell me I&apos;m wrong about something? I&apos;m here for it.
       </p>
 
       {/* Social links */}

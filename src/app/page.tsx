@@ -6,7 +6,7 @@ const focusAreas = [
     title: "Replacement Level Media",
     slug: "rlm",
     description:
-      "AI-generated baseball analysis through a rotating cast of beat reporters. Chaos is the brand.",
+      "Six AI writers covering a Sunday beer league like it's the World Series. The analysis is real. The absurdity is the point.",
     href: "/projects/rlm",
     tag: "Content",
   },
@@ -14,7 +14,7 @@ const focusAreas = [
     title: "CoachAI",
     slug: "coachai",
     description:
-      "Driveline-informed pitching and hitting analysis. AI coaching built on biomechanics and data.",
+      "I coached 200+ athletes and spent years in biomechanics labs. Now I'm teaching AI everything I know.",
     href: "/projects/coachai",
     tag: "AI",
   },
@@ -22,7 +22,7 @@ const focusAreas = [
     title: "FL Men's League",
     slug: "fl-mens-league",
     description:
-      "Analytics engine powering the Fantasy Life Men's Baseball League. Leaderboards, stats, tools.",
+      "wRC+, WAR, and a chaos metric for a league where guys work day jobs and play on Sundays. The absurdity is the point. The analytics are legit.",
     href: "/projects/fl-mens-league",
     tag: "Analytics",
   },
@@ -30,7 +30,7 @@ const focusAreas = [
     title: "Matchup+",
     slug: "matchup-plus",
     description:
-      "Pitcher vs lineup grading system. Pitch shape meets swing shape. Quantifying the edge.",
+      "Fantasy baseball analytics for people who care about process. Pitch shape meets swing shape. Data-driven, not vibes-based.",
     href: "/projects/matchup-plus",
     tag: "Analytics",
   },
@@ -53,12 +53,16 @@ export default async function HomePage() {
           Morain or Shine.
         </h1>
         <p
-          className="text-lg max-w-2xl leading-relaxed"
+          className="text-lg max-w-2xl leading-relaxed mb-3"
           style={{ color: "#a1a1aa" }}
         >
-          Baseball analytics, AI tools, and software development. Former
-          pitching coach turned data guy. Building things at the intersection of
-          baseball and technology.
+          Former pitching coach. Now building AI tools, analytics systems, and an absurdist sports media operation. Never the best at one thing. Obsessively good at a lot of things through sheer grind.
+        </p>
+        <p
+          className="text-sm max-w-2xl"
+          style={{ color: "var(--muted)" }}
+        >
+          So what, next pitch.
         </p>
         <div className="flex gap-4 mt-8">
           <Link
