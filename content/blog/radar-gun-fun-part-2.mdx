@@ -1,0 +1,48 @@
+---
+title: "Radar Gun Fun, Part 2"
+author: "Zac Morain"
+date: "2019-07-09"
+category: "Technology"
+tags: ["baseball", "radar-gun", "velocity", "pitching", "technology"]
+description: "Part two of the radar gun series -- common errors, cosine error, minimum and maximum range, and frequency interference explained."
+---
+
+## Demystifying the Radar Gun: What Leads to Inaccurate Readings?
+
+You just got that brand new, super expensive radar gun. So excited you break it out of the box and head straight to the nearest baseball field. You get there and realize you are getting some weird readings. If you don't know much about what can cause radar gun errors, this can leave you in a state of confusion. Whether it is a slow reading, inability to get a reading, or "ghost" readings, the cause is usually something that can be explained.
+
+In this second part of the Radar Gun Fun series we will cover common errors, mistakes, and what interference is. The previous blog post discussed what radar is and how it actually works.
+
+### Mis-Aiming the "Cone"
+
+The first error is a simple and silly one. Some of you may be thinking "well duh", but not aiming the cone correctly needs to be talked about. The "cone" is the area of the "frame of capture" of a radar gun. This was one of the topics from the previous article.
+
+Being in front of the pitcher can provide fewer physical obstacles when aiming at release point, but be careful with your tilt.
+
+So, let's begin with how we want to aim the cone. The ideal spot to cast your cone is from in front of the pitcher. This means you should be standing behind the home plate and the catcher or behind the backstop if it is not too far away. Obviously, it is a little safer behind the backstop, but a net will do just as fine as a safety precaution. If necessary, standing behind the pitcher will work, too. From that spot though, the path of the arm and body can get in the way. Minimizing objects in the way will make it easier for the radar gun to capture the velocity of the baseball. The main goal is to be in a straight line with the path of the ball. Also, from behind the pitcher standing further back will let the cone spread out more and make it easier to aim. We always want the cone to be aimed to capture the ball at release. Air resistance causes the ball to lose velocity very quickly as it travels to home plate so this will allow for finding peak velocity. Once set up in the right position, mis-aiming the cone can still occur.
+
+One way this happens is tilting the radar gun. Even a slight downward tilt can make the cone end up pointing at a spot on the ground in front of the pitcher and not allow you to get the ball at the release point. Usually a downward tilt will come after multiple innings and numerous pitches when your arm is getting tired. Over correcting for this or just simply not paying attention (such as writing down a scouting report) can lead to an upward tilt, though. It is a cone and not a linear line, but this could still lead to picking up the ball sometime after the release point when it may be several MPH slower, because the diameter of the cone is only so big. The same thing can be said for aiming the gun side to side. So, kind of like a real gun, pay attention to where it is aiming as this could cause more complications, such as cosine error.
+
+### Cosine Error
+
+I remember being a kid thinking you wanted to be perpendicular to the path of the ball only to learn later in life that this is completely false. Like mentioned above, the radar beam should be in a straight path with the flight of the ball. If the cone is shot out at an angle to the path of the ball, then the radar gun will give a slower reading. So, if a scout can't sit directly behind home plate and has to sit off center, their readings will be lower than the true speed. This can be accounted for though.
+
+Unfortunately, this involves some math. To get the concept, it involves some trigonometry, but don't worry, it all simplifies down to an equation. So, armed with the calculator app on a smart phone, anyone can calculate this error provided they know the angles involved.
+
+If you divide measured speed by Cos Alpha you will find actual velocity (Vo).
+
+We discussed above that it is ideal to aim in a straight line with the path of the baseball. When off to the left or right, an angle is created when aiming. That angle correlates to the difference in velocity reading. If you divide the reading from the radar gun by the Cosine of that angle, the resulting number is the actual velocity of the baseball. So, if you are getting a reading of 90 mph while at a 10 degree angle, the actual velocity is about 91 mph. If scouting, it may be difficult to know the exact angle so it may be a guessing game. No matter the angle though, it will always read out slower than the actual velocity. That is because with the radar straight on, the angle is 0 degrees and Cosine of 0 is 1. So, dividing the reading from the gun by Cos(0) yields the same number from the gun. With every increase in degree of angle, Cosine becomes smaller and smaller until it reaches 0 at 90 degrees.
+
+### Min and Max Measurement Range
+
+Since radar guns work by sending out radio waves and bouncing them off a moving object, the maximum distance they can make a measurement depends on three things: How much power they put out, how well radio waves reflect off the object, and how low a signal the radar gun can detect. Not all radar guns are created equal. The larger radar guns put out more power and can measure a baseball from up to a few hundred feet away. These are often used by scouts when they want to sit back in the stands at a stadium. The small units like the Pocket Radar are designed more for coaching and training, or scouting on amateur fields and can measure a baseball from up to 120 feet away.
+
+Since a baseball will slow down by around 8 MPH from the pitcher to the catcher, you need to be sure you are well within the maximum range of the radar gun to reach the release point of the ball. If you are using a radar gun with only 120 feet of range but are sitting in the stands at 150 feet away from the pitcher then the ball will not get into the range of the radar gun until it is halfway to the catcher and has slowed down by several MPH. This might make you think you are getting readings that are not accurate when in reality it is because you are too far back.
+
+There is also a minimum distance that the ball needs to travel through the air for the radar gun to get a good reading. This is because it takes time for a radar gun to find the ball and then make enough measurements to get the maximum speed of the ball. If you are throwing or hitting into a net that is only a few feet away, then the ball may only be in the air for a tiny fraction of a second and the radar gun may not be able find the maximum speed. A good rule of thumb would be to make sure there is at least 12 to 15 feet of distance for the ball to be in flight before it contacts anything that would slow it down. This allows for enough time for the radar gun to make all of the necessary measurements to find the maximum release speed or exit speed off the bat. If you think you are seeing low readings, move further away from the net and see if you get better readings.
+
+### Frequency Interference
+
+When dealing with microwaves, interference is a problem. This is something that every radar gun can experience. Cell phone towers, other radar guns, and even motors and fans from cooling systems can interfere with the radar gun attempting to get a reading. On top of that metal acts as a mirror, so if there are bleachers beyond the outfield walls, better hope they are made of wood. Even though the microwaves are invisible, they can be influenced by other signals or waves. Taking note of the surroundings is a smart idea before settling in to get some readings.
+
+I experienced some interference heavily at one stadium recently. Not only was the field near a cell phone tower, beyond the outfield was a freeway crossing with cars flying by in the background. This led some funky readings, or what is known as "ghost readings". This is when you get a random reading without a pitch. Common numbers you might see from cell phone tower interference are 28, 56, 84, and 112. Unfortunately, for me, that day I was trying to measure the velocity of a pitcher around that 84 mark. If you are not working around those numbers, then it can be easy to decipher the difference.

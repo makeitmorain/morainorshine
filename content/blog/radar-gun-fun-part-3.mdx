@@ -1,0 +1,50 @@
+---
+title: "Radar Gun Fun, Part 3"
+author: "Zac Morain"
+date: "2019-07-13"
+category: "Technology"
+tags: ["baseball", "radar-gun", "velocity", "pitching", "technology", "research"]
+description: "Part three of the radar gun series -- a head-to-head comparison of Stalker Pro II, Stalker Sport 2, Pocket Radar Smart Coach, Bushnell, and Diamond Kinetics PitchTracker."
+---
+
+## Demystifying the Radar Gun: Comparing Radar Systems
+
+"Any fool can know. The point is to understand." This quote by Albert Einstein fuels my belief as a coach. Just because we know something, doesn't mean we truly understand it. That is when you turn into the guy that just repeats things that have been heard over time. To truly understand things we must investigate, question, and research.
+
+I brought this philosophy to radar guns, which sparked this series of articles. The first logical step was to understand the components and how they operate. Then I moved on to how errors and interference can affect otherwise accurate readings. With that base information, I can now move on to the fun part: comparing radar guns and in which situations each can be useful. This is the article in the Radar Gun Fun series you have been waiting for. It's a long one, so settle in, and let's get down to business.
+
+### The Radar Guns
+
+The Stalker radar guns are well known. Scouts love them and law enforcement trusts them. They are often considered the gold standard of radar guns, boasting their accuracy, and when they are calibrated right, they are hard to beat. The price of the gun reflects that reputation too. The two Stalker guns used in this experiment were the Pro II and Sport 2 coming in at $1,250 and $499, respectively. The Pro II is the model most scouts use, while the Sport 2 is the more portable and cost-friendly consumer product.
+
+The next radar gun is the Pocket Radar. This unit is also used by some scouts and many pro trainers and coaches. If you pay attention to MLB games or baseball twitter, you might have heard of Rob Friedman AKA @PitchingNinja. His GIFs of pitchers throwing filth have become widespread. So widespread in fact that he uses his publicity to promote amateur pitchers with a new Twitter handle, @Flatgroundapp. On most of the videos pitchers post, there is an overlay of a velocity reading. This is done with the app that connects to the Pocket Radar Smart Coach model. Along with its small, compact size and not needing to be calibrated, the app is just another feature that makes this radar gun appealing. The Smart Coach model used in this comparison comes in at $399. There is also another model, the Ball Coach Radar at $299 that has the same accuracy but is not compatible with the Pocket Radar app.
+
+Then we have the first radar gun I ever bought: a five year old, $99 Bushnell. I didn't have a lot of money then, but I wanted to have a radar gun. There is not a lot of information on it because of its age, but it can be assumed to be your run of the mill, average, cheap radar gun. If you google "Bushnell Radar Gun" you most likely will see the model come up first.
+
+The last "radar" is the Diamond Kinetics PitchTracker baseball. This one, like the Bushnell, comes in at $99, however the app associated with it is only compatible with an iPad/iPhone. This smart ball also tracks spin rate, spin axis, and a few other metrics that your standard radar gun does not. However, the cost starts to go up significantly because you need to pay a monthly subscription fee to get access to these extra metrics beyond velocity. This ball does not operate like the previous radar guns as it is not actually a radar gun. There is a smart chip inside the ball that allows for the calculation of the different metrics. Since this affordable piece of technology is becoming more common, testing its reliability against traditional radar guns is important.
+
+### Methods, Procedures, & Data Collection
+
+The set up was simple but done in two different sets. The first set involved the two Stalker radar guns (Sport 2 and Pro II) and the Pocket Radar Smart Coach (PR). The PR and Pro II were each set up on tripods, about 10 feet behind the pop-up netting. The Sport 2 was handheld at roughly the same position as the other two. The pitcher then set up about 40 feet away on the other side of the net and threw about 35-40 pitches. The second set up was similar, but this time with the Sport 2, Diamond Kinetics PitchTracker Baseball (DK), and the Bushnell. The Sport 2 was on the tripod while the Bushnell gun was handheld. The DK was the ball thrown by the pitcher, so an iPhone was set up close to the other two radars to easily see all three velocities. Once again, 35-40 pitches were thrown. After collecting the data, I calculated different statistics to compare all the radar guns back to the Stalker Sport 2. I decided on the Stalker Sport 2 for two reasons: Stalker's reputation of being accurate, and the Sport 2 operates with the same frequency as the Pocket Radar Smart Coach and the Bushnell.
+
+### Data Analysis
+
+Time to dig into what the numbers really mean.
+
+#### Stalker Pro II vs Stalker Sport 2
+
+This first comparison is between the two Stalker guns. The Pro II operates at a frequency of 37 GHz, compared to the Sport 2's 24 GHz, but since they are made by the same company, their accuracy should be similar. The accuracy claimed by Stalker on both of these models is +/- 3% of the reading, so at 70 mph there could be a discrepancy of +/- 2 mph. I used the data from this comparison to have a control for natural pitch to pitch variability. This will also show the reason to never count on any single radar reading.
+
+In the first graph, we have a regression chart. For this type of study, we are looking for a regression line with a slope as close to 1 as possible (that would mean that the radar guns were obtaining the same readings). Here we see it comes in at about 1.01. Not bad at all. The R^2 for this comparison is 0.957. This number describes how well the regression line fits the data points. The closer R^2 is to 1, the more of a correlation. Once again, not bad.
+
+So, the math shows there is a good correlation between the two Stalker radar guns' readings. This is more data for the long run of a set of pitches. In order to really see pitch to pitch variability, we need another graph.
+
+A Bland-Altman plot takes the averages of two variables and plots them against the differences between those same two variables. This will show more of the variability between the two radar guns. Without making any standard deviation (SD) calculation, we can see a trend that the majority of the data is within +/- 1 mph. Only 4 data points are outside of that, and if you include the +/- 3% that Stalker claims, then it becomes only 1 data point. This trend shows that they don't vary much, and therefore can be considered reliable. It should be noted here that even the most expensive radar guns vary. In fact, the two Stalker guns were different more times than they were the same. If you talk to pro scouts they will tell you that you can easily see a 2 mph difference between multiple radar guns on the same pitch. This also shows why you are kidding yourself if you think you can read any pitch with an accuracy down to 0.1 mph resolution.
+
+#### Pocket Radar vs Stalker Sport 2
+
+Now that we have an idea of what can be expected for normal variance on the most expensive radars, we can look at the other radar guns. Up next we have the Pocket Radar Smart Coach model. This small, mobile radar gun operates on the same frequency band as the Sport 2 at about 24 GHz. Pocket Radar claims an accuracy of +/- 1 mph which is more precise than the +/- 3% that Stalker claims on their guns. Let's see how they match up.
+
+The regression chart looks eerily similar. When rounded in the same fashion, the numbers are the same as the Stalker test with a slope of 1.01 and R^2 of 0.957. The reason we round these numbers is because we are getting down to some very small numbers, and therefore these values offer less significance.
+
+The statistical correlation between the Pocket Radar and the Stalker Sport 2 matches what we saw between the two Stalker guns. Given its price point and portability, the Pocket Radar holds up. This data supports why it has become a popular choice among coaches and trainers who want reliable velocity readings without the Stalker price tag.
